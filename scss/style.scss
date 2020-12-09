@@ -1,0 +1,156 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #000
+}
+
+.wrapper{
+    @media screen and (min-width: 1366px) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1366px;
+    }
+    
+    
+}
+header{
+    .header__container{
+        background: url("../../images/bg-img.png") no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 810px;
+        padding: 50px 0 60px;
+    }
+    
+    nav{
+       
+        .top-nav__container{
+            width: 70%;
+            height: 30px;
+            margin: auto;
+            background: url("../../images/logo.svg") no-repeat;
+            background-position: 10px auto;
+            
+            .top-nav-menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 5px;
+                
+                .top-nav-menu__item{
+                    list-style-type: none;
+                    margin-left: 42px;
+    
+                    &:first-child{
+                        margin-left: 0;
+                    }
+    
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 19px;
+                        font-family: Arial;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+    
+                        &:hover{
+                            cursor: pointer;
+                            opacity: .6;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    .welcome-block{
+        color: #fff;
+        font-family: Arial;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        padding-top: 160px;
+
+        h1{
+            font-size: 53px;
+            font-weight: normal;
+
+            span{
+                font-weight: bold;
+            }
+        }
+        h2{
+            font-size: 19px;
+            font-weight: normal;
+        }
+        a{
+            font-size: 19px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #0dcaff;
+            border-radius: 2px;
+            margin: 30px auto;
+        }
+    }
+
+    .about_skills{
+        margin-top: 150px;
+
+        .skills-list{
+            display: flex;
+            flex-direction: row;
+            margin: 0 150px 0 auto;
+            justify-content: flex-end;
+
+            .skills-list__item{
+                color: #fff;
+                font-family: Arial;
+                list-style-type: none;
+                width: 225px;
+                height: 225px;
+                margin-left: 15px;
+                border-radius: 11px;
+                background-image: linear-gradient(to top, #191a1c, #09090a);
+
+                .skill_title{
+                    display: flex;
+                    justify-content: center;
+                    height: 80px;
+                    line-height: 80px;
+                    position: relative;
+                    padding-left: 35px;
+
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+
+                    ::after{
+                        content: "";
+                        width: 60px;
+                        border-bottom: #0dcaff 1px solid;
+                        position: absolute;
+                        bottom: 0;
+                        left: 35px;
+                    }
+                }
+                .skill_decription{
+                    p{
+                        padding-left: 35px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
