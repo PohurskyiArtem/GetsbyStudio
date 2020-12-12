@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./src/styles/css/style.min.css">
+    <link rel="stylesheet" href="src/plugins/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/plugins/owlcarousel/assets/owl.theme.default.min.css">
+    
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper">
             <div class="header__container">
                 <nav>
                     <div class="top-nav__container">
                         <ul class="top-nav-menu">
-                            <li class="top-nav-menu__item"><a>Home</a></li>
-                            <li class="top-nav-menu__item"><a>Service</a></li>
-                            <li class="top-nav-menu__item"><a>Portfolio</a></li>
-                            <li class="top-nav-menu__item"><a>Contact Us</a></li>
+                            <li class="top-nav-menu__item"><a href="#home">Home</a></li>
+                            <li class="top-nav-menu__item"><a href="#services"  >Service</a></li>
+                            <li class="top-nav-menu__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="top-nav-menu__item"><a href="#contact-us">Contact Us</a></li>
                         </ul>
                         <div class="burger-btn_wrapper">
                             <div class="burger-btn"><span></span></div>
@@ -26,7 +29,7 @@
                 <div class="welcome-block">
                    <h1>Welcome to <span>GetsbyStudio</span></h1> 
                    <h2>We help to achive success in a short time</h2>
-                   <a href="#contact" class="offer-contact-link">Let's talk</a>
+                   <a href="#contact-us" class="offer-contact-link">Let's talk</a>
                 </div>
                 <div class="about_skills">
                     <ul class="skills-list">
@@ -56,7 +59,7 @@
             </div>
         </div>
     </header>
-    <section class="services">
+    <section id="services">
         <div class="wrapper">
             <div class="services__container">
                 <div class="services__title__container"><span>Services</span></div>
@@ -85,8 +88,106 @@
             </div>
         </div>
     </section>
-
+    <section id="portfolio">
+        <div class="wrapper">
+            <div class="portfolio__container">
+                <div class="portfolio__header">
+                    <div class="portfolio__title__container">
+                        <span>Portfolio</span>
+                    </div>
+                    <div class="portfolio__sort-menu__container">
+                        <ul class="sort-menu">
+                            <li class="sort-menu__item active">All</li>
+                            <li class="sort-menu__item">Web development</li>
+                            <li class="sort-menu__item">Ux analysis</li>
+                            <li class="sort-menu__item">Web design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl-carousel">
+                    <div class="owl-carousel__item">
+                        <div class="portfolio__item__info">
+                            <span>Soft&Clear</span>
+                            <p>Web development</br>Web design</p>
+                            <a href="#">View project</a>
+                        </div>
+                        <img src="src/images/carousel-img-1.jpg" alt="" class="imgg">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <div class="portfolio__item__info">
+                            <span>Soft&Clear</span>
+                            <p>Web development</br>Web design</p>
+                            <a href="#">View project</a>
+                        </div>
+                        <img src="src/images/carousel-img-2.jpg" alt="" class="imgg">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <div class="portfolio__item__info">
+                            <span>Soft&Clear</span>
+                            <p>Web development</br>Web design</p>
+                            <a href="#">View project</a>
+                        </div>
+                        <img src="src/images/carousel-img-3.jpg" alt="" class="imgg">
+                        </div>
+                    <div class="owl-carousel__item">
+                        <div class="portfolio__item__info">
+                            <span>Soft&Clear</span>
+                            <p>Web development</br>Web design</p>
+                            <a href="#">View project</a>
+                        </div>
+                        <img src="src/images/carousel-img-4.jpg" alt="" class="imgg">
+                    </div>
+                    <div class="owl-carousel__item">
+                        <div class="portfolio__item__info">
+                            <span>Soft&Clear</span>
+                            <p>Web development</br>Web design</p>
+                            <a href="#">View project</a>
+                        </div>
+                        <img src="src/images/carousel-img-5.jpg" alt="" class="imgg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <div class="wrapper">
+            <div class="contact-us__container">
+                <div class="contact-us__title__container">
+                    <h3>Want a web site?</h3>
+                </div>
+                <div class="contact-form__container">
+                    <form id="contact-us_form">
+                        <input type="text" placeholder="Your name" class="contact-us_form__input">
+                        <input type="text" placeholder="Email" class="contact-us_form__input">
+                        <br/>
+                        <input type="text" placeholder="Phone" class="contact-us_form__input">
+                        <input type="text" placeholder="Craft" class="contact-us_form__input">
+                        <br/>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message" class="contact-us_form__textarea"></textarea>
+                        <br/>
+                        <input type="submit" value="SEND" class="contact-us_form__submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <nav>
+                <div class="bottom-nav__container">
+                    <ul class="bottom-nav-menu">
+                        <li class="bottom-nav-menu__item"><a href="#home">Home</a></li>
+                        <li class="bottom-nav-menu__item"><a href="#services">Service</a></li>
+                        <li class="bottom-nav-menu__item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="bottom-nav-menu__item"><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="rights-info__container"><span>2020 All rights reserved</span></div>
+        </div>
+    </footer>
     <script src="src/scripts/jquery.min.js"></script>
+    <script src="src/plugins/owlcarousel/owl.carousel.min.js"></script>
     <script src="src/scripts/index.min.js"></script>
 </body>
 </html>

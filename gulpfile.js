@@ -42,6 +42,21 @@ function js_script(){
         .pipe(dest('./src/scripts/'));
 }
 
+function carousel_script_minimize(){
+    src('./scripts/owl.carousel.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('owl.carousel.js'))
+        .pipe(minify({
+            mangle: {
+              keepClassName: true
+            }
+        }))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(dest('./src/plugins/owlcarousel/'));
+}
+
 function watchFiles(){
     watch('./scss/**/*', watchStyles);
     watch('./scripts/**/*', watchScripts);
@@ -75,10 +90,12 @@ function watchStyles(done) {
 
 function watchScripts(done) {
     js_script();
+    carousel_script_minimize();
     browserSync.reload()
     done()
 }
 
 task('default', parallel(sync, watchFiles));
+task('carousel_min', carousel_script_minimize);
 // gulp.task(css_style);
 // exports.default = defaultSomeTask;
